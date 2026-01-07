@@ -178,7 +178,101 @@ s.pop()
 print(s)
 print('----------------------------------------------------------------------')
 
-
+s = {12,12,14,15,17,16}
+s.clear()  # del s
+print(s)
 print('----------------------------------------------------------------------')
 
+#==========================Python - Loop Sets================================
+# You can loop through the set items by using a for loop:
+s = {23,1,3,4,5,100,6,7,88,9,9,0}
 
+for i in s:
+   print(i)
+print('----------------------------------------------------------------------')
+
+s = {2,1,3,4,5,22,3,3}
+l = list(s)  # converts set into list 
+i = 0
+while i < (len(l)):
+   print(l[i])
+   i+=1
+print('----------------------------------------------------------------------')
+
+# Join Sets
+# There are several ways to join two or more sets in Python.
+# The union() and update() methods joins all items from both sets.
+# The intersection() method keeps ONLY the duplicates.
+# The difference() method keeps the items from the first set that are not in the other set(s).
+# The symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+s1 = {"aditya","Kale", "Jalgaon"}
+s2 = {10,23,34,45,56}
+
+s3 = s1.union(s2)  #or# s3 = s1|s2
+print(s3)
+print('----------------------------------------------------------------------')
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1.union(set2, set3, set4)
+print(myset)
+print('----------------------------------------------------------------------')
+
+# Note: The  | operator only allows you to join sets with sets,
+#  and not with other data types like you can with the  union() method.
+# ----------------------------------------------------------------------
+
+# Update
+# The update() method inserts all items from one set into another.
+# The update() changes the original set, and does not return a new set.
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set1.update(set2)
+print(set1)
+print('----------------------------------------------------------------------')
+
+# Intersection
+# Keep ONLY the duplicates
+
+# The intersection() method will return a new set, that only contains the items .
+# that are present in both sets.
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.intersection(set2)  # set3 = set1 & set2
+print(set3)
+print('----------------------------------------------------------------------')
+
+# Difference
+# The difference() method will return a new set that will contain only 
+# the items from the first set that are not present in the other set.
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.difference(set2)  # set3 = set1 - set2
+print(set3)
+print('----------------------------------------------------------------------')
+
+# Symmetric Differences
+# The symmetric_difference() method will keep only the elements 
+# that are NOT present in both sets.
+
+# Example
+# Keep the items that are not present in both sets:
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.symmetric_difference(set2)  # set3 = set1 ^ set2
+
+print(set3)
+print('----------------------------------------------------------------------')
+
+print('----------------------------------------------------------------------')
