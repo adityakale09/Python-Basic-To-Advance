@@ -51,28 +51,70 @@
 # a = a^b # 5 ^ 10^5 (here confusion)
 # print(a)
 # print(b)
-#------------------------or-----------------------------------
-# Input two variables
-a = input("Enter the value of the first variable (a): ")
-b = input("Enter the value of the second variable (b): ")
-# Display the original values
-print(f"Original values: a = {a}, b = {b}")
-# Swap the values using a temporary variable
-temp = a
-a = b
-b = temp
-# Display the swapped values
-print(f"Swapped values: a = {a}, b = {b}")
+# #------------------------or-----------------------------------
+# # Input two variables
+# a = input("Enter the value of the first variable (a): ")
+# b = input("Enter the value of the second variable (b): ")
+# # Display the original values
+# print(f"Original values: a = {a}, b = {b}")
+# # Swap the values using a temporary variable
+# temp = a
+# a = b
+# b = temp
+# # Display the swapped values
+# print(f"Swapped values: a = {a}, b = {b}")
+
+# #=======================================================================
+# # Program 5
+# # Write a Python program to generate a random number.
+# import random as a
+# print(f"random number : {a.randint(1,100)}")
+
+# #=======================================================================
+# # Program 6
+# # Write a Python program to convert kilometers to miles.
+# km = float(input("Enter kilometers: "))
+# conversion = 0.621371
+
+# miles = km*conversion
+# print(f"{km} kilometers is equal to {miles} miles")
 
 #=======================================================================
+# # Program 7
+# # Write a Python program to convert Celsius to Fahrenheit
+
+# celsius = float(input("Enter a tempeture in celsius : "))
+# Fahrenheit = (f'{(celsius* 9/5) + 32 }')
+
+# print(f'{celsius} degree celsius = {Fahrenheit} degree Fahrenheit')
 
 #=======================================================================
+# # Program 8
+# # Write a Python program to display calendar.
+# import calendar as c
+# year = int(input("Enter year: "))
+# month = int(input("Enter month: "))
 
+# cal = c.month(year, month)
+# print(cal)
 #=======================================================================
 
-#=======================================================================
+# Program 9
+# Write a Python program to solve quadratic equation.
+import math as m
 
-#=======================================================================
+a = int (input('Enter value for a :'))
+b = int (input('Enter value for b :'))
+c = int (input('Enter value for c :'))
+
+if a==0:
+    print('Invalid input values')
+else:
+    disc = (b*b) - (4*a*c)
+    sqroot = m.sqrt(disc)
+    x = sqroot / (4*a)
+
+
 
 
 #=======================================================================
