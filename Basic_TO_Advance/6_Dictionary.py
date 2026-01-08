@@ -43,6 +43,7 @@ print("---------------------------------")
 
 d = dict(name = 'aditya', lname = 'kale' , div = 'b_final year')
 print(len(d))
+print(type(d))
 print("---------------------------------")
 
 

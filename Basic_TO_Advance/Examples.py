@@ -101,19 +101,36 @@
 
 # Program 9
 # Write a Python program to solve quadratic equation.
-import math as m
 
-a = int (input('Enter value for a :'))
-b = int (input('Enter value for b :'))
-c = int (input('Enter value for c :'))
+import math
 
-if a==0:
-    print('Invalid input values')
+# Step 1: Take input from user
+a = float(input("Enter value of a: "))
+b = float(input("Enter value of b: "))
+c = float(input("Enter value of c: "))
+
+# Step 2: Check if it is a quadratic equation
+if a == 0:
+    print("This is not a quadratic equation (a cannot be 0).")
 else:
-    disc = (b*b) - (4*a*c)
-    sqroot = m.sqrt(disc)
-    x = sqroot / (4*a)
+    # Step 3: Calculate discriminant
+    d = b*b - 4*a*c
 
+    # Step 4: Check nature of roots
+    if d > 0:
+        x1 = (-b + math.sqrt(d)) / (2*a)
+        x2 = (-b - math.sqrt(d)) / (2*a)
+        print("Two real solutions:")
+        print("x1 =", x1)
+        print("x2 =", x2)
+
+    elif d == 0:
+        x = -b / (2*a)
+        print("One real solution:")
+        print("x =", x)
+
+    else:
+        print("No real solutions (discriminant is negative).")
 
 
 
