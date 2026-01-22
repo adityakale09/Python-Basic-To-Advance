@@ -14,11 +14,5 @@
 # else:
 #     print(f"{num} is odd number")
 
-import calendar as c
-
-n1 = int (input("Enter year : "))
-n2 = int (input("ENter month : "))
-
-cal = c.month(n1,n2)
-
-print(cal)
+for i in range (1,10+1):
+    print(i)
